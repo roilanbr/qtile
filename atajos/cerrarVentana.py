@@ -1,0 +1,1 @@
+Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),

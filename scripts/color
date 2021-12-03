@@ -1,0 +1,16 @@
+# Font effect and ANSI Colors
+# uso: 
+# echo $blink${red}ERROR${resetAll}
+
+resetAll="$(printf '\e[0m')"    bold="$(printf '\033[1m')"  dim="$(printf '\033[2m')"     cursive="$(printf '\033[3m')"
+underlined=$(printf '\033[4m')  blink="$(printf '\033[5m')" reverse="$(printf '\033[7m')" hidden="$(printf '\033[8m')"
+scratched="$(printf '\033[9m')" underlined2="$(printf '\033[21m')" resetAll=$resetAll
+
+black="$(printf '\033[30m')"    red="$(printf '\033[31m')"     green="$(printf '\033[32m')"    yellow="$(printf '\033[33m')"   
+blue="$(printf '\033[34m')"     magenta="$(printf '\033[35m')" cyan="$(printf '\033[36m')"     white="$(printf '\033[37m')"      
+
+blackBg="$(printf '\033[40m')"  redBg="$(printf '\033[41m')" greenbg="$(printf '\033[42m')"  yellowBg="$(printf '\033[43m')" 
+blueBg="$(printf '\033[44m')"   magentaBg="$(printf '\033[45m')" cyanBg="$(printf '\033[46m')"   whiteBg="$(printf '\033[47m')" 
+
+blackLg="$(printf '\033[90m')"  redLg="$(printf '\033[91m')" greenLg="$(printf '\033[92m')"  yellowLg="$(printf '\033[93m')"   
+blueLg="$(printf '\033[94m')"   magentaLg="$(printf '\033[95m')" cyanLg="$(printf '\033[96m')"   whiteLg="$(printf '\033[97m')"
